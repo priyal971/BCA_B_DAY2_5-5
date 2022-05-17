@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+
+        .row {
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 50px;
+            font-size: 1.5em;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 0px 1px 12px 13px #888888;
+        }
+
+        .Form {
+            color: rgba(103, 112, 232, 0.749);
+            margin-bottom: 50px;
+            margin-top:25px;
+            transition: 2s;
+            width: 15%;
+        }
+
+        .Form:hover {
+            letter-spacing: 0.2em;
+            color: rgba(47, 58, 209, 0.749);
+            background: #c9c7ff;
+            width: 15%;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        form {
+            color: rgba(64, 75, 235, 0.749);
+        }
+
+        .cont
+        {
+            margin-top: 50px;
+        }
+
+        #Marksheet
+        {
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 class="Form">FORM</h1>
+    </center>
+    <form class="row g-3"  >
+
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Enter Address Here..." required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" required>
+        </div>
+        <div class="col-md-4" required>
+            <label for="inputState" class="form-label" required>State</label>
+            <select id="inputState" class="form-select" required>
+                <option selected>Choose...</option>
+                <option>Ahmedabad</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Amritsar</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" required>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" required>Sign in</button>
+        </div>
+    </form>
+    <center>
+        <div class="cont">
+            <h1 style="color: rgba(103, 112, 232, 0.749);" id="Marksheet">MARKSHEET</h1>
+            <table class="table table-hover">
+
+                <tr>
+                    <th>Register Number</th>
+                    <td colspan="4">1234567891</td>
+                </tr>
+
+                <tr>
+                    <th>Name</th>
+                    <td colspan="4">Riya panchal</td>
+                </tr>
+
+                <tr>
+                    <th align="center"> Date of birth</th>
+                    <td colspan="4">01-06-2004</td>
+                </tr>
+                <tr>
+                    <td colspan="5"> &nbsp;&nbsp;
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Internal</th>
+                    <th>Final</th>
+                    <th>total</th>
+                    <th>Result</th>
+
+                </tr>
+
+                <tr>
+                    <td>011323</td>
+                    <td>20</td>
+                    <td>75</td>
+                    <td>95</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>011343</td>
+                    <td>15</td>
+                    <td>75</td>
+                    <td>90</td>
+                    <td>pass</td>
+                </tr>
+
+                <tr>
+                    <td>099876</td>
+                    <td>18</td>
+                    <td>74</td>
+                    <td>92</td>
+                    <td>pass</td>
+                </tr>
+
+                <tr>
+                    <td>088765</td>
+                    <td>12</td>
+                    <td>85</td>
+                    <td>97</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>0998765</td>
+                    <td>14</td>
+                    <td>56</td>
+                    <td>70</td>
+                    <td>Pass</td>
+                </tr>
+            </table>
+
+        </div>
+        <br>
+    </center>
+</body>
+
+</html>
+
+<!-- git add .
+git commit -m "Whatever"
+git push -->
+
